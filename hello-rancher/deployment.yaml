@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-world
-  namespace: default
+  name: hello-rancher
+  namespace: hello-rancher
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: hello-world
+      app: hello-rancher
   template:
     metadata:
       labels:
-        app: hello-world
+        app: hello-rancher
     spec:
       containers:
-        - name: hello-world
-          image: peteindockerhub/hello-world:1.0.2
+        - name: hello-rancher
+          image: peteindockerhub/hello-rancher:1.0.0
           imagePullPolicy: Always
           ports:
           - containerPort: 8080
@@ -25,7 +25,7 @@ spec:
             - name: CONTAINER_COLOR
               value: teal
             - name: TITLE
-              value: Container Information              
+              value: Hello Rancher              
             - name: PETS
               value: whitecows   
           readinessProbe:
