@@ -29,7 +29,6 @@ spec:
             - name: PETS
               value: whitecows   
           readinessProbe:
-            httpGet: added
-version: 1.0.300
+            httpGet:
               port: web
               path: /
