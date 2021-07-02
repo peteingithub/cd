@@ -4,7 +4,7 @@ metadata:
   name: hello-world
   namespace: default
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: hello-world
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: peteindockerhub/hello-world:1.0.1
+          image: peteindockerhub/hello-world:1.0.0
           imagePullPolicy: Always
           ports:
           - containerPort: 8080
@@ -29,7 +29,7 @@ spec:
             - name: PETS
               value: whitecows   
           readinessProbe:
-            httpGet:added
+            httpGet: added
 version: 1.0.300
               port: web
               path: /
