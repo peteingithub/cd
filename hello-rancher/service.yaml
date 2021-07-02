@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: hello-rancher
-  namespace: hello-rancher
+  namespace: default
 spec:
   type: NodePort
   selector:
