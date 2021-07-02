@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: petehakkarainen/hello-world:1.0.2
+          image: peteingithub/hello-world:1.0.2
           imagePullPolicy: Always
           ports:
           - containerPort: 8080
@@ -29,6 +29,7 @@ spec:
             - name: PETS
               value: whitecows   
           readinessProbe:
-            httpGet:
+            httpGet:added
+version: 1.0.300
               port: web
               path: /
