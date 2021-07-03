@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: hello-rancher
-          image: peteindockerhub/hello-rancher:1.0.2
+          image: peteindockerhub/hello-rancher:1.0.1
           imagePullPolicy: Always
           ports:
           - containerPort: 8080
