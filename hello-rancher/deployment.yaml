@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello-rancher
-  namespace: default
+  namespace: hello-rancher
 spec:
   replicas: 3
   selector:
