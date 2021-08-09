@@ -1,7 +1,7 @@
 # cd
 Continuous Delivery content for testing with RAN201 training course.
 
-hello-rancher images are available at https://peteindockerhub/rancher/hello-rancher
+hello-rancher images are available at https://peteindockerhub/hello-rancher
 
 Version tags: 
 v1.0.0
